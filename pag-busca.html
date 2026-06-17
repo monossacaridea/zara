@@ -20,7 +20,7 @@
       </button>
     </header>
 
-    <!-- CONTEÚDO PRINCIPAL (rolável) -->
+    <!-- CONTEÚDO PRINCIPAL -->
     <main class="main-content">
 
       <!-- Campo de busca -->
@@ -36,36 +36,31 @@
         </div>
       </section>
 
-      <!-- Grid de duas colunas: esquerda (links) e direita (cards) -->
-      <div class="content-grid">
+      <!-- Navegação principal -->
+      <nav class="nav-links">
+        <a href="#">NOVIDADES</a>
+        <a href="#">MULHER</a>
+        <a href="#">HOMEM</a>
+        <a href="#">CRIANÇAS</a>
+        <a href="#">ZARA ORIGINS</a>
+        <a href="#" class="info">INFO</a>
+      </nav>
 
-        <!-- Coluna esquerda: navegação e tendências -->
-        <div class="left-column">
-          <nav class="nav-links">
-            <a href="#">NOVIDADES</a>
-            <a href="#">MULHER</a>
-            <a href="#">HOMEM</a>
-            <a href="#">CRIANÇAS</a>
-            <a href="#">ZARA ORIGINS</a>
-            <a href="#" class="info">INFO</a>
-          </nav>
+      <!-- Tendências + Cards 2x2 -->
+      <section class="tendencies-section">
+        <span class="section-label">TENDÊNCIAS</span>
+        <ul class="tendencies-list">
+          <li><a href="#">VESTIDOS</a></li>
+          <li><a href="#">ALFAIATARIA</a></li>
+          <li><a href="#">DENIM</a></li>
+          <li><a href="#">ACESSÓRIOS</a></li>
+        </ul>
 
-          <div class="tendencies">
-            <span class="section-label">TENDÊNCIAS</span>
-            <ul>
-              <li><a href="#">VESTIDOS</a></li>
-              <li><a href="#">ALFAIATARIA</a></li>
-              <li><a href="#">DENIM</a></li>
-              <li><a href="#">ACESSÓRIOS</a></li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Coluna direita: cards visuais -->
-        <div class="cards-column">
+        <!-- Cards em grid 2x2 -->
+        <div class="cards-grid">
           <!-- Card 1: Coleção Inverno -->
-          <div class="card">
-            <div class="card-image" style="background: #d0d0d0;"></div>
+          <div class="card card-image">
+            <div class="card-bg" style="background: #d0d0d0;"></div>
             <div class="card-label">
               <span class="card-title">COLEÇÃO INVERNO</span>
               <span class="card-sub">VER AGORA</span>
@@ -73,28 +68,27 @@
           </div>
 
           <!-- Card 2: Essenciais -->
-          <div class="card">
-            <div class="card-image" style="background: #c0c0c0;"></div>
+          <div class="card card-image">
+            <div class="card-bg" style="background: #c0c0c0;"></div>
             <div class="card-label">
               <span class="card-title">ESSENCIAIS</span>
               <span class="card-sub">EXPLORAR</span>
             </div>
           </div>
 
-          <!-- Card 3: ZARA PRE-OWNED (sem imagem, só texto) -->
+          <!-- Card 3: ZARA PRE-OWNED -->
           <div class="card card-plain">
             <span>ZARA PRE-OWNED</span>
           </div>
 
-          <!-- Card 4: NEWSLETTER (sem imagem, só texto) -->
+          <!-- Card 4: NEWSLETTER -->
           <div class="card card-plain">
             <span>NEWSLETTER</span>
           </div>
         </div>
+      </section>
 
-      </div>
-
-      <!-- Rodapé com links sociais e ajuda (dentro do conteúdo rolável) -->
+      <!-- Rodapé com links -->
       <footer class="footer-links">
         <div>
           <span class="section-label">SIGA-NOS</span>
@@ -114,11 +108,11 @@
     <!-- NAVBAR -->
     <nav class="navbar">
       <a href="#" class="nav-item">
-        <img src="assets/icon-nav-home.png" alt="Início" class="nav-icon">
+        <img src="assets/icon-inicio.png" alt="Início" class="nav-icon">
         <span>INÍCIO</span>
       </a>
       <a href="#" class="nav-item active">
-        <img src="assets/icon-nav-buscar.png" alt="Buscar" class="nav-icon">
+        <img src="assets/icon-buscar.png" alt="Buscar" class="nav-icon">
         <span>BUSCAR</span>
       </a>
       <a href="#" class="nav-item">
