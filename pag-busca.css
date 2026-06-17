@@ -12,7 +12,6 @@ html, body {
   font-family: Inter, sans-serif;
 }
 
-/* Centralização vertical e horizontal – container 100vh */
 body {
   display: flex;
   align-items: center;
@@ -32,7 +31,7 @@ body {
   overflow: hidden;
 }
 
-/* HEADER – idêntico ao da página do produto */
+/* HEADER */
 .header {
   height: 64px;
   background: #f9f9f9;
@@ -66,7 +65,7 @@ body {
   letter-spacing: -2px;
 }
 
-/* CONTEÚDO PRINCIPAL – rolável */
+/* CONTEÚDO PRINCIPAL */
 .main-content {
   flex: 1;
   display: flex;
@@ -150,7 +149,7 @@ body {
   color: #000;
 }
 
-/* Tendências + Cards */
+/* Tendências */
 .tendencies-section {
   display: flex;
   flex-direction: column;
@@ -204,40 +203,45 @@ body {
   justify-content: center;
 }
 
+/* Cards com imagem */
 .card-image {
   background: #f4f3f3;
 }
 
-.card-bg {
+.card-bg-img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .card-label {
   position: absolute;
-  bottom: 10px;
-  left: 10px;
+  bottom: 12px;
+  left: 12px;
   color: white;
   display: flex;
   flex-direction: column;
   gap: 2px;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
 }
 
 .card-title {
-  font-size: 13px;
-  font-weight: 600;
+  font-size: 14px;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
 
 .card-sub {
-  font-size: 9px;
+  font-size: 10px;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
+/* Cards sem imagem (apenas texto) */
 .card-plain {
   background: #f9f9f9;
   border: 1px solid #e0e0e0;
@@ -253,7 +257,7 @@ body {
   padding: 0 8px;
 }
 
-/* Rodapé com links sociais e ajuda */
+/* Rodapé */
 .footer-links {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -279,7 +283,7 @@ body {
   text-decoration: underline;
 }
 
-/* NAVBAR – idêntica à da página do produto */
+/* NAVBAR */
 .navbar {
   height: 81px;
   background: #f9f9f9;

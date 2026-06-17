@@ -12,7 +12,10 @@
     <header class="header">
       <button class="btn-menu"><img src="assets/icon-menu.png" alt="menu"></button>
       <h1 class="logo">ZARA</h1>
-      <button class="btn-search"><img src="assets/icon-header-right.png" alt="search"></button>
+      <!-- Lupa redireciona para pag-busca -->
+      <button class="btn-search" onclick="window.location.href='pag-busca.html'">
+        <img src="assets/icon-header-right.png" alt="search">
+      </button>
     </header>
 
     <!-- Gallery Section -->
@@ -100,11 +103,11 @@
 
     <!-- BottomNavBar -->
     <nav class="navbar">
-      <a href="#" class="nav-item active">
+      <a href="index.html" class="nav-item">
         <img src="assets/icon-inicio.png" alt="Início" class="nav-icon">
         <span>INÍCIO</span>
       </a>
-      <a href="#" class="nav-item">
+      <a href="pag-busca.html" class="nav-item">
         <img src="assets/icon-buscar.png" alt="Buscar" class="nav-icon">
         <span>BUSCAR</span>
       </a>
@@ -119,5 +122,4 @@
     </nav>
   </div>
 </body>
-
 </html>

@@ -11,40 +11,53 @@
     <div class="header">
       <button class="btn-menu"><img src="assets/icon-menu.png" alt="menu"></button>
       <h1 class="logo">ZARA</h1>
-      <button class="btn-search"><img src="assets/icon-search-header.png" alt="search"></button>
+      <!-- Lupa redireciona para pag-busca -->
+      <button class="btn-search" onclick="window.location.href='pag-busca.html'">
+        <img src="assets/icon-search.png" alt="search">
+      </button>
     </div>
 
     <div class="content">
       <section class="hero-section">
-        <img src="assets/hero-product.png" alt="Sobretudo" class="hero-image">
+        <button class="btn-product" onclick="window.location.href='pag-produto.html'">
+          <img src="assets/hero-product.png" alt="Sobretudo" class="hero-image">
+        </button>
         <h2>SOBRETUDO ESTRUTURADO EM LÃ</h2>
+        <h5>R$1.299,00</h5>
       </section>
 
       <section class="products-section">
         <div class="product">
-          <div class="product-image"></div>
+          <button class="btn-product" onclick="window.location.href='pag-produto.html'">
+            <img src="assets/vestido.png" alt="Vestido">
+          </button>
           <h3>VESTIDO KNIT LIMITED</h3>
           <p>R$ 459,00</p>
         </div>
         <div class="product">
-          <div class="product-image"></div>
+          <button class="btn-product" onclick="window.location.href='pag-produto.html'">
+            <img src="assets/bolsa.png" alt="Bolsa">
+          </button>
           <h3>BOLSA COURO MINIMAL</h3>
           <p>R$ 899,00</p>
         </div>
       </section>
 
       <section class="bottom-section">
-        <img src="assets/bottom-feature.png" alt="Nova coleção" class="bottom-image">
+        <button class="btn-product" onclick="window.location.href='pag-produto.html'">
+          <img src="assets/bottom-feature.png" alt="Nova coleção" class="bottom-image">
+        </button>
         <h2>NOVA COLEÇÃO ORIGINS</h2>
+        <h5>Ver seleção</h5>
       </section>
     </div>
 
     <nav class="navbar">
-      <a href="#" class="nav-item active">
+      <a href="index.html" class="nav-item active">
         <img src="assets/icon-inicio.png" alt="Início" class="nav-icon">
         <span>INÍCIO</span>
       </a>
-      <a href="#" class="nav-item">
+      <a href="pag-busca.html" class="nav-item">
         <img src="assets/icon-buscar.png" alt="Buscar" class="nav-icon">
         <span>BUSCAR</span>
       </a>
