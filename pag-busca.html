@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buscar - Zara</title>
+  <link rel="stylesheet" href="pag-busca.css">
+</head>
+<body>
+  <div class="container">
+
+    <!-- HEADER -->
+    <header class="header">
+      <button class="btn-menu">
+        <img src="assets/icon-menu.png" alt="menu">
+      </button>
+      <h1 class="logo">ZARA</h1>
+      <button class="btn-search">
+        <img src="assets/icon-header-right.png" alt="search">
+      </button>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL (rolável) -->
+    <main class="main-content">
+
+      <!-- Campo de busca -->
+      <section class="search-section">
+        <div class="search-box">
+          <span class="search-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8" />
+              <line x1="21" y1="21" x2="16.65" y2="16.65" />
+            </svg>
+          </span>
+          <input type="text" class="search-input" placeholder="O QUE VOCÊ PROCURA?">
+        </div>
+      </section>
+
+      <!-- Grid de duas colunas: esquerda (links) e direita (cards) -->
+      <div class="content-grid">
+
+        <!-- Coluna esquerda: navegação e tendências -->
+        <div class="left-column">
+          <nav class="nav-links">
+            <a href="#">NOVIDADES</a>
+            <a href="#">MULHER</a>
+            <a href="#">HOMEM</a>
+            <a href="#">CRIANÇAS</a>
+            <a href="#">ZARA ORIGINS</a>
+            <a href="#" class="info">INFO</a>
+          </nav>
+
+          <div class="tendencies">
+            <span class="section-label">TENDÊNCIAS</span>
+            <ul>
+              <li><a href="#">VESTIDOS</a></li>
+              <li><a href="#">ALFAIATARIA</a></li>
+              <li><a href="#">DENIM</a></li>
+              <li><a href="#">ACESSÓRIOS</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Coluna direita: cards visuais -->
+        <div class="cards-column">
+          <!-- Card 1: Coleção Inverno -->
+          <div class="card">
+            <div class="card-image" style="background: #d0d0d0;"></div>
+            <div class="card-label">
+              <span class="card-title">COLEÇÃO INVERNO</span>
+              <span class="card-sub">VER AGORA</span>
+            </div>
+          </div>
+
+          <!-- Card 2: Essenciais -->
+          <div class="card">
+            <div class="card-image" style="background: #c0c0c0;"></div>
+            <div class="card-label">
+              <span class="card-title">ESSENCIAIS</span>
+              <span class="card-sub">EXPLORAR</span>
+            </div>
+          </div>
+
+          <!-- Card 3: ZARA PRE-OWNED (sem imagem, só texto) -->
+          <div class="card card-plain">
+            <span>ZARA PRE-OWNED</span>
+          </div>
+
+          <!-- Card 4: NEWSLETTER (sem imagem, só texto) -->
+          <div class="card card-plain">
+            <span>NEWSLETTER</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Rodapé com links sociais e ajuda (dentro do conteúdo rolável) -->
+      <footer class="footer-links">
+        <div>
+          <span class="section-label">SIGA-NOS</span>
+          <a href="#">INSTAGRAM</a>
+          <a href="#">TIKTOK</a>
+          <a href="#">PINTEREST</a>
+        </div>
+        <div>
+          <span class="section-label">AJUDA</span>
+          <a href="#">ENTREGAS</a>
+          <a href="#">TROCAS</a>
+        </div>
+      </footer>
+
+    </main>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <a href="#" class="nav-item">
+        <img src="assets/icon-nav-home.png" alt="Início" class="nav-icon">
+        <span>INÍCIO</span>
+      </a>
+      <a href="#" class="nav-item active">
+        <img src="assets/icon-nav-buscar.png" alt="Buscar" class="nav-icon">
+        <span>BUSCAR</span>
+      </a>
+      <a href="#" class="nav-item">
+        <img src="assets/icon-carrinho.png" alt="Carrinho" class="nav-icon">
+        <span>CARRINHO</span>
+      </a>
+      <a href="#" class="nav-item">
+        <img src="assets/icon-conta.png" alt="Conta" class="nav-icon">
+        <span>CONTA</span>
+      </a>
+    </nav>
+
+  </div>
+</body>
+</html>
