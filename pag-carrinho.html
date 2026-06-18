@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrinho - Zara</title>
+  <link rel="stylesheet" href="pag-carrinho.css">
+</head>
+<body>
+  <div class="container">
+
+    <!-- HEADER -->
+    <header class="header">
+      <button class="btn-menu">
+        <img src="assets/icon-menu.png" alt="menu">
+      </button>
+      <h1 class="logo">ZARA</h1>
+      <!-- Ícone da lupa → redireciona para pag-busca.html -->
+      <button class="btn-search" onclick="window.location.href='pag-busca.html'">
+        <img src="assets/icon-header-right.png" alt="search">
+      </button>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="main-content">
+
+      <div class="cart-header">
+        <h2>CARRINHO (2)</h2>
+      </div>
+
+      <section class="cart-items">
+
+        <!-- Item 1 -->
+        <article class="cart-item">
+          <div class="item-image">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3ugZyFYkFJ0PnOtldx2wsH92UNQb8wC12_sp6gzQNTqyRbwq27JsTGrCb6G6alinrp8Zd5GOnTFDAQy_4FABq0kX0-D2zkvv4RaV_Rwvia_nNRiryR8jSndIr3HoClizqJOnNE7TTIvh6SuYu3cHywafgUmTO_Lc5dwIs9fRZktIypUlaRpgR5VDKR2WP9rdKwVptVI4wZvXp_nhG5qyRT88G0LxCCxQJ-tDyIZo8WTs7OiXvZtgwWQUBydOnPtDYPD9i4Hvwog" alt="Sobretudo de lã premium">
+          </div>
+          <div class="item-info">
+            <div class="item-header">
+              <h3>SOBRETUDO DE LÃ PREMIUM</h3>
+              <button class="btn-remove" onclick="alert('Remover item do carrinho')">✕</button>
+            </div>
+            <p class="ref">REF. 0482/201</p>
+            <p class="attr">COR: PRETO</p>
+            <p class="attr">TAMANHO: L</p>
+            <div class="item-actions">
+              <div class="qty-control">
+                <button class="qty-btn">−</button>
+                <span class="qty-number">1</span>
+                <button class="qty-btn">+</button>
+              </div>
+              <span class="item-price">R$ 1.299,00</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Item 2 -->
+        <article class="cart-item">
+          <div class="item-image">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuD5gpnWcI1p0lKq7qMI8OcM4-JZ8JGgPPitHgVIv4A4Pp81XT1LJ9VtUEBWSj1owN_TRzrEgyrbDG6cWycgX7c7LBSt8EAyn-3sP4jBdjam_Z2d0FkaR5CeLdtWb--K1XX2O7tI1CMTDxfLoNBCaa7maGHRh59QKhyXZmRUBK0Wn8H5kJArIjTppltTMPt9EZgH_osmk-uLfQCtvF1xG9H2GOo3A9gzaNuTQB4iPet_NEsDcRJ3CfT6kIR6yK4UmMvvAwtukCLD3A" alt="Mala de ombro estruturada">
+          </div>
+          <div class="item-info">
+            <div class="item-header">
+              <h3>MALA DE OMBRO ESTRUTURADA</h3>
+              <button class="btn-remove" onclick="alert('Remover item do carrinho')">✕</button>
+            </div>
+            <p class="ref">REF. 6619/105</p>
+            <p class="attr">COR: BRANCO</p>
+            <p class="attr">TAMANHO: ÚNICO</p>
+            <div class="item-actions">
+              <div class="qty-control">
+                <button class="qty-btn">−</button>
+                <span class="qty-number">1</span>
+                <button class="qty-btn">+</button>
+              </div>
+              <span class="item-price">R$ 459,00</span>
+            </div>
+          </div>
+        </article>
+
+      </section>
+
+      <!-- Resumo do pedido -->
+      <aside class="order-summary">
+        <h2>RESUMO</h2>
+        <div class="summary-row">
+          <span>Subtotal</span>
+          <span>R$ 1.758,00</span>
+        </div>
+        <div class="summary-row">
+          <span>Envio</span>
+          <span>Grátis</span>
+        </div>
+        <div class="summary-total">
+          <span>Total</span>
+          <span>R$ 1.758,00</span>
+        </div>
+        <p class="tax-note">* INCLUI IVA</p>
+
+        <button class="btn-continue" onclick="window.location.href='pag-pagamento.html'">Continuar</button>
+
+        <div class="delivery-info">
+          <div class="info-item">
+            <span>Entrega estimada: 2-3 dias úteis</span>
+          </div>
+          <div class="info-item">
+            <span>Devoluções gratuitas em 30 dias</span>
+          </div>
+        </div>
+      </aside>
+
+    </main>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <!-- Ícone INÍCIO → redireciona para index.html -->
+      <a href="index.html" class="nav-item">
+        <img src="assets/icon-inicio.png" alt="Início" class="nav-icon">
+        <span>INÍCIO</span>
+      </a>
+      <!-- Ícone BUSCAR → redireciona para pag-busca.html -->
+      <a href="pag-busca.html" class="nav-item">
+        <img src="assets/icon-buscar.png" alt="Buscar" class="nav-icon">
+        <span>BUSCAR</span>
+      </a>
+      <a href="pag-carrinho.html" class="nav-item active">
+        <img src="assets/icon-carrinho.png" alt="Carrinho" class="nav-icon">
+        <span>CARRINHO</span>
+      </a>
+      <a href="#" class="nav-item">
+        <img src="assets/icon-conta.png" alt="Conta" class="nav-icon">
+        <span>CONTA</span>
+      </a>
+    </nav>
+
+  </div>
+</body>
+</html>

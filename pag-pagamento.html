@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finalizar Compra - Zara</title>
+  <link rel="stylesheet" href="pag-pagamento.css">
+</head>
+<body>
+  <div class="container">
+
+    <!-- HEADER (fundo branco) -->
+    <header class="header">
+      <button class="btn-menu">
+        <img src="assets/icon-menu.png" alt="menu">
+      </button>
+      <h1 class="logo">ZARA</h1>
+      <!-- Ícone da lupa → redireciona para pag-busca.html -->
+      <button class="btn-search" onclick="window.location.href='pag-busca.html'">
+        <img src="assets/icon-search.png" alt="search">
+      </button>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="main-content">
+
+      <!-- Seção: Endereço de Envio -->
+      <section class="checkout-section">
+        <div class="section-header">
+          <h2>1. ENVIO</h2>
+          <button class="btn-edit">EDITAR</button>
+        </div>
+        <div class="section-body">
+          <p class="name">MARIA OLIVEIRA</p>
+          <p class="address">RUA OSCAR FREIRE, 1100, APT 42</p>
+          <p class="address">JARDINS, SÃO PAULO - SP</p>
+          <p class="address">01426-001, BRASIL</p>
+          <p class="phone">+55 11 98765-4321</p>
+        </div>
+      </section>
+
+      <!-- Seção: Método de Envio -->
+      <section class="checkout-section">
+        <div class="section-header">
+          <h2>2. MÉTODO DE ENVIO</h2>
+        </div>
+        <div class="section-body">
+          <div class="shipping-method">
+            <div>
+              <p class="method-title">ENTREGA STANDARD</p>
+              <p class="method-desc">Receba entre Quinta-feira, 24 Out e Segunda-feira, 28 Out</p>
+            </div>
+            <span class="method-price">R$ 19,00</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Seção: Pagamento -->
+      <section class="checkout-section">
+        <div class="section-header">
+          <h2>3. PAGAMENTO</h2>
+        </div>
+        <div class="section-body payment-options">
+
+          <!-- Cartão de Crédito -->
+          <div class="payment-option active" onclick="selectPayment(this)">
+            <div class="payment-header">
+              <span class="payment-label">CARTÃO DE CRÉDITO</span>
+              <img src="assets/credit-card.png" alt="Cartão de crédito" class="payment-icon">
+            </div>
+            <div class="payment-fields">
+              <input class="input-field" placeholder="NÚMERO DO CARTÃO" type="text">
+              <div class="input-row">
+                <input class="input-field" placeholder="MM/AA" type="text">
+                <input class="input-field" placeholder="CVV" type="text">
+              </div>
+            </div>
+          </div>
+
+          <!-- PIX -->
+          <div class="payment-option" onclick="selectPayment(this)">
+            <div class="payment-header">
+              <span class="payment-label">PIX <span class="badge">5% OFF</span></span>
+              <img src="assets/qrcode.png" alt="PIX" class="payment-icon">
+            </div>
+            <p class="payment-desc">Aprovação imediata do pedido.</p>
+          </div>
+
+          <!-- Apple Pay -->
+          <div class="payment-option" onclick="selectPayment(this)">
+            <div class="payment-header">
+              <span class="payment-label">APPLE PAY</span>
+              <img src="assets/applepay.png" alt="Apple Pay" class="payment-icon">
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Resumo do Pedido -->
+      <aside class="order-summary">
+        <h2>RESUMO DO PEDIDO</h2>
+
+        <!-- Item 1 -->
+        <div class="summary-item">
+          <div class="summary-image">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8xJ2F1Pr2md0Z_OCQJUtzyY3FN1pRy6KzjDn161O9U0pl7sExuMUxMtjNbyn0NRn6V50CrBtkIAFrtyD3I6KrclWv-qhvoiZMcFFOGHkwLrYC1vCSqcXD3uMA5lUfUD4f5V_HlCM8lJ9eVp9Qfjy0xPw4vanZ4P9OwY8mv21To2wPnRc5UdCx3xzvYxGspVDwHrJzS1qQeY6VV5Vgm2EKZtuGOCvolWJS7WBF9-BnzlQ5SIWcIeeMZWEiLl62VD8o0rMsbk5iig" alt="Sobretudo de lã estruturado">
+          </div>
+          <div class="summary-details">
+            <p class="product-name">SOBRETUDO DE LÃ ESTRUTURADO</p>
+            <p class="product-ref">REF. 7453/201 | TAMANHO M</p>
+            <p class="product-price">R$ 899,00</p>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="summary-item">
+          <div class="summary-image">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDA-6CxMjm93uEzPgV8NMflJxaL6q4hIG950nu8jzmMgWafWBYu1hCD6pnBYPmaLmfLIJDrliquqI_g85fNkd8vIx7_MQyTp51dBdzxlgIoLvW4_5V3qWTRIB4E0_OczCpX1rsL-JzwDMjGK0PAFBE9H-pu2QtSnz5WBQAIVmrP62qbOjnerNQjUZm_WVShYNRuwMe31lwRcJSmU-U-PG3wtEuSfli18KxWgg7h4c_-tD-o24-45U-5PWgxbCRCpJ4hFofl8bjFcg" alt="Bolsa shoulder em couro">
+          </div>
+          <div class="summary-details">
+            <p class="product-name">BOLSA SHOULDER EM COURO</p>
+            <p class="product-ref">REF. 1122/404 | TAMANHO ÚNICO</p>
+            <p class="product-price">R$ 549,00</p>
+          </div>
+        </div>
+
+        <!-- Totais -->
+        <div class="totals">
+          <div class="total-row">
+            <span>Subtotal</span>
+            <span>R$ 1.448,00</span>
+          </div>
+          <div class="total-row">
+            <span>Envio</span>
+            <span>R$ 19,00</span>
+          </div>
+          <div class="total-row grand-total">
+            <span>Total</span>
+            <span>R$ 1.467,00</span>
+          </div>
+          <p class="tax-note">* IMPOSTOS INCLUÍDOS</p>
+        </div>
+
+        <button class="btn-checkout">FINALIZAR COMPRA</button>
+        <p class="secure-payment">
+          <span class="lock-icon">🔒</span>
+          PAGAMENTO SEGURO SSL
+        </p>
+      </aside>
+
+    </main>
+
+    <!-- NAVBAR (fundo branco) -->
+    <nav class="navbar">
+      <!-- Ícone INÍCIO → redireciona para index.html -->
+      <a href="index.html" class="nav-item">
+        <img src="assets/icon-nav-home.png" alt="Início" class="nav-icon">
+        <span>INÍCIO</span>
+      </a>
+      <!-- Ícone BUSCAR → redireciona para pag-busca.html -->
+      <a href="pag-busca.html" class="nav-item">
+        <img src="assets/icon-buscar.png" alt="Buscar" class="nav-icon">
+        <span>BUSCAR</span>
+      </a>
+      <a href="pag-carrinho.html" class="nav-item active">
+        <img src="assets/icon-carrinho.png" alt="Carrinho" class="nav-icon">
+        <span>CARRINHO</span>
+      </a>
+      <a href="#" class="nav-item active">
+        <img src="assets/icon-conta.png" alt="Conta" class="nav-icon">
+        <span>CONTA</span>
+      </a>
+    </nav>
+
+  </div>
+
+  <!-- Script para seleção de pagamento -->
+  <script>
+    function selectPayment(element) {
+      document.querySelectorAll('.payment-option').forEach(opt => {
+        opt.classList.remove('active');
+      });
+      element.classList.add('active');
+    }
+  </script>
+</body>
+</html>

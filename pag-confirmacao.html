@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pedido Confirmado - Zara</title>
+  <link rel="stylesheet" href="pag-confirmacao.css">
+</head>
+<body>
+  <div class="container">
+
+    <!-- HEADER -->
+    <header class="header">
+      <button class="btn-menu">
+        <img src="assets/icon-menu.png" alt="menu">
+      </button>
+      <h1 class="logo">ZARA</h1>
+      <!-- Ícone da lupa → redireciona para pag-busca.html -->
+      <button class="btn-search" onclick="window.location.href='pag-busca.html'">
+        <img src="assets/icon-search.png" alt="search">
+      </button>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="main-content">
+
+      <!-- Etiqueta de confirmação -->
+      <div class="confirmation-tag">
+        <span>Confirmação de Compra</span>
+      </div>
+
+      <!-- Título principal -->
+      <h1 class="main-title">PEDIDO REALIZADO COM SUCESSO</h1>
+
+      <!-- Detalhes do pedido -->
+      <div class="order-details">
+        <div class="detail-row">
+          <span class="label">Número do Pedido</span>
+          <span class="value">#ZR-82910442</span>
+        </div>
+        <div class="detail-row">
+          <span class="label">Data Estimada</span>
+          <span class="value">12 — 15 NOV</span>
+        </div>
+        <div class="detail-row">
+          <span class="label">Método de Envio</span>
+          <span class="value">ENTREGA STANDARD</span>
+        </div>
+      </div>
+
+      <!-- Mensagem -->
+      <p class="message">
+        Enviamos um e-mail de confirmação para o seu endereço registrado. Você poderá acompanhar o status do seu envio na seção 'Minha Conta'.
+      </p>
+
+      <!-- Botões -->
+      <div class="button-group">
+        <button class="btn-primary" onclick="window.location.href='index.html'">CONTINUAR COMPRANDO</button>
+        <button class="btn-secondary">VER MEUS PEDIDOS</button>
+      </div>
+
+      <!-- Seção "Também pode interessar" -->
+      <section class="recommendations">
+        <h3 class="rec-title">Também pode interessar</h3>
+        <div class="rec-grid">
+          <!-- Item 1 -->
+          <div class="rec-item">
+            <div class="rec-image">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyDF-Beab-BTRa6LmyRmCBolBFvd_vliqYUxbQcBrW7OhH_3XxJqgu1xdBw5NmLRJCi0nh6j89hf-28WXOiij1PWrSaPt38t2MhiqXAatbz1ItGWMxAiu8LroYMqUjJHecxFkppsYU1rhoaOPhDTBL1tx3-Gb15xSDUb4lrmHI2sQpckCM9Ln2RT14L0l9y1wL0b59bcQOs0fBK12jvVTIgkWq6HESRcZrkHStO3-Xwjej3cNfkrDkQV9W0TOqBVTU0TTJGgI5VA" alt="Bolsa Minimalista Couro">
+            </div>
+            <p class="rec-name">Bolsa Minimalista Couro</p>
+          </div>
+          <!-- Item 2 -->
+          <div class="rec-item">
+            <div class="rec-image">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1vCBf0LLC-ANAI_nI5EbxkELjd5vaiz5TbMNyzY9ELQMcShslKMZLOzoW3dQwUox-HQYveN5Ku0ZtBYTz9Tl_ck6D76QcjAndBwraTco0x1kZ-Cvy1JfjDVPTc3rvNRSf7JXgDiWZjlW8Gf45sdmWP4Cw2qJj3isKKmeP7nA-2uSPJBLwsZgZ6oP4icgEq-IRLUfqdxrM7rNOy0hwBxfUYV06XhqHXWhI0WU4A3drwxYdTZZAFhADhgPwTzoHDt_AXch0r2cgAA" alt="Sobretudo Lã Origins">
+            </div>
+            <p class="rec-name">Sobretudo Lã Origins</p>
+          </div>
+          <!-- Item 3 -->
+          <div class="rec-item">
+            <div class="rec-image">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuA19sSrPDG-mJ2vGs40Stjay675u8Znjej7sbzWRtEFFcHf3a3sNOB6bTlRQYqsljfRXcw7DikKzAWdRG58YHGyOqpOGx_lYBocY4IgfLbMrpbGGxs5_CojDvsI1pAOfKK_lenapMLG_Z39fCvdSHw8Nh23vgxNpU5zBEKbL5NifSdpNNglWW6vpiWlCxW3dkSt25IiQciX84kNLz844k8qs62_wzL3QpBZoM7AjozUJej3kpLUUZf_bSonorcc7cTk7JcZYfRsYg" alt="Camisa Popeline Branca">
+            </div>
+            <p class="rec-name">Camisa Popeline Branca</p>
+          </div>
+          <!-- Item 4 -->
+          <div class="rec-item">
+            <div class="rec-image">
+              <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAHGX-iOKV4ZHwk-ojgvWgrUGsYdwiAum-XeDIjwiXtg8AwhsRINMwXHiBmP8XDlpA96wnHS6jrE85vBHZ4dF8bAZ4RZuG3EII1OLP_ktN1Qaxzj2fOoL_-g0mzBfzFOLGSZSubAo_XG-bDpmS-fUK_RPb-Agx5WWez0q7qpVCZ8YWFhwKoQ-er8Sg91Qkf3xI4mztoeKqpxf3cOd2JPOxLokt4NoI-fWY1lbuZqSckHX7PinoEVAOfW4E4pB7yGmj0cRpJQ6hWLA" alt="Sapato Derby Couro">
+            </div>
+            <p class="rec-name">Sapato Derby Couro</p>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <!-- Ícone INÍCIO → redireciona para index.html -->
+      <a href="index.html" class="nav-item">
+        <img src="assets/icon-inicio.png" alt="Início" class="nav-icon">
+        <span>INÍCIO</span>
+      </a>
+      <!-- Ícone BUSCAR → redireciona para pag-busca.html -->
+      <a href="pag-busca.html" class="nav-item">
+        <img src="assets/icon-buscar.png" alt="Buscar" class="nav-icon">
+        <span>BUSCAR</span>
+      </a>
+      <a href="#" class="nav-item">
+        <img src="assets/icon-carrinho.png" alt="Carrinho" class="nav-icon">
+        <span>CARRINHO</span>
+      </a>
+      <a href="#" class="nav-item active">
+        <img src="assets/icon-conta.png" alt="Conta" class="nav-icon">
+        <span>CONTA</span>
+      </a>
+    </nav>
+
+  </div>
+</body>
+</html>
