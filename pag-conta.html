@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minha Conta - Zara</title>
+  <link rel="stylesheet" href="pag-conta.css">
+</head>
+<body>
+  <div class="container">
+
+    <!-- HEADER -->
+    <header class="header">
+      <button class="btn-menu">
+        <img src="assets/icon-menu.png" alt="menu">
+      </button>
+      <h1 class="logo">ZARA</h1>
+      <!-- Ícone da lupa → redireciona para pag-busca.html -->
+      <button class="btn-search" onclick="window.location.href='pag-busca.html'">
+        <img src="assets/icon-search.png" alt="search">
+      </button>
+    </header>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="main-content">
+
+      <!-- Perfil: Nome e ID -->
+      <section class="profile-section">
+        <h1 class="profile-name">ALEXANDRE</h1>
+        <p class="profile-id">ID: 02938475-LX</p>
+        <!-- Botão LOGOUT → redireciona para pag-login.html -->
+        <button class="btn-logout" onclick="window.location.href='pag-login.html'">LOGOUT</button>
+      </section>
+
+      <!-- Dados Pessoais -->
+      <section class="data-card">
+        <h2>DADOS PESSOAIS</h2>
+        <div class="data-field">
+          <label>NOME COMPLETO</label>
+          <input type="text" value="ALEXANDRE SILVA" readonly>
+        </div>
+        <div class="data-field">
+          <label>E-MAIL</label>
+          <input type="email" value="alexandre.s@fashionmail.com" readonly>
+        </div>
+        <div class="data-field">
+          <label>TELEFONE</label>
+          <input type="text" value="+55 11 98765-4321" readonly>
+        </div>
+        <button class="btn-edit">EDITAR DADOS</button>
+      </section>
+
+      <!-- Endereços -->
+      <section class="data-card">
+        <div class="address-header">
+          <h2>ENDEREÇOS</h2>
+          <button class="btn-add">+</button>
+        </div>
+        <div class="address-item">
+          <p class="address-tag">Principal • Casa</p>
+          <p class="address-detail">
+            Rua Oscar Freire, 1050, Apto 42<br>
+            Jardins, São Paulo - SP<br>
+            01426-001
+          </p>
+          <button class="btn-manage">GERENCIAR</button>
+        </div>
+      </section>
+
+      <!-- Histórico de Pedidos -->
+      <section class="orders-card">
+        <h2>HISTÓRICO DE PEDIDOS</h2>
+
+        <!-- Pedido 1 -->
+        <div class="order-item">
+          <div class="order-image">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6dXi_MCPgaRQkHXgQroZhuOYrFjtXNRZpiLIrAHnMSx-iWH1K5soChTTfbms0R6kmqo-wtEN1jDDb9ECQe9RdNQk9GFs4Oqok8c9-pDL0c4gasFq28p8SkDILAw464nXb_veEujTOGLhLhWx0Py4Y0MlDKXGEjBbpVn_ScB-tWspTGfNaKu0M8iszkMvadlepjF27lDyUDuYocj9-j8PNgY__OwLYAGBTFujL6sAcZzBNSKT--5UKetpQf9sbs3BMW21kCs3AQQ" alt="Sobretudo">
+          </div>
+          <div class="order-details">
+            <div class="order-header">
+              <h3>PEDIDO #394857</h3>
+              <span class="order-status delivered">Entregue</span>
+            </div>
+            <p class="order-date">REALIZADO EM 12 JAN 2024</p>
+            <ul class="order-items">
+              <li>SOBRETUDO EM LÃ PRETO</li>
+              <li>CALÇA DE ALFAIATARIA SLIM</li>
+              <li>CAMISA POPELINE BRANCA</li>
+            </ul>
+            <div class="order-footer">
+              <span class="order-total">R$ 1.259,00</span>
+              <button class="btn-details">DETALHES</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pedido 2 -->
+        <div class="order-item">
+          <div class="order-image">
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8Xj4pOsb44b9nX8OEZ5S0i9Cg3Va9WJZ8tMMW3VGP2a1JlXrucj47B_6Kd_cVpv74Kjcra5GMtQooPXc-vnRq9IvV7VSN7WYNQPEF02rqsy3wLaUR_y6oeEOebm3i58NdoCf_6g4AIdv2PcaqF_4qmJSFawAdyNpr0_tcoOfCglRWv7mmufoU77Q_VmP4OGQhs5uwyMV08U2cwx5cOTMUo6OXs4Za0uxjSCKybfrRKRuvse_g_kChWdiMxpi2aFFWVFFK-woC1w" alt="Blazer">
+          </div>
+          <div class="order-details">
+            <div class="order-header">
+              <h3>PEDIDO #392104</h3>
+              <span class="order-status processing">Processando</span>
+            </div>
+            <p class="order-date">REALIZADO EM 05 FEV 2024</p>
+            <ul class="order-items">
+              <li>BLAZER ESTRUTURADO CINZA</li>
+            </ul>
+            <div class="order-footer">
+              <span class="order-total">R$ 899,00</span>
+              <button class="btn-details">DETALHES</button>
+            </div>
+          </div>
+        </div>
+
+        <button class="btn-view-all">VER TODOS OS PEDIDOS</button>
+      </section>
+
+    </main>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <!-- Ícone INÍCIO → redireciona para index.html -->
+      <a href="index.html" class="nav-item">
+        <img src="assets/icon-inicio.png" alt="Início" class="nav-icon">
+        <span>INÍCIO</span>
+      </a>
+      <!-- Ícone BUSCAR → redireciona para pag-busca.html -->
+      <a href="pag-busca.html" class="nav-item">
+        <img src="assets/icon-buscar.png" alt="Buscar" class="nav-icon">
+        <span>BUSCAR</span>
+      </a>
+      <a href="#" class="nav-item">
+        <img src="assets/icon-carrinho.png" alt="Carrinho" class="nav-icon">
+        <span>CARRINHO</span>
+      </a>
+      <a href="#" class="nav-item active">
+        <img src="assets/icon-conta.png" alt="Conta" class="nav-icon">
+        <span>CONTA</span>
+      </a>
+    </nav>
+
+  </div>
+</body>
+</html>
