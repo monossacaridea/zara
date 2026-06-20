@@ -1,4 +1,3 @@
-```html
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -133,7 +132,8 @@
 
         <h2>Como executar</h2>
         <p>
-            Basta acessar o link do projeto no GitHub Pages.
+            Clone o repositório e abra o arquivo <code>index.html</code> no navegador.
+            Não requer instalação de dependências.
         </p>
         <pre>
 git clone https://github.com/monossacaridea/zara.git
@@ -150,4 +150,3 @@ open index.html
     </div>
 </body>
 </html>
-```
