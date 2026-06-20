@@ -1,4 +1,6 @@
-## Projeto front-end que reproduz a experiência visual e funcional de uma loja de moda, inspirado na identidade da ZARA. O fluxo completo de compra foi implementado, incluindo navegação, busca, carrinho, checkout e área do usuário.
+## Aplicativo Zara
+
+Projeto front-end que reproduz a experiência visual e funcional de uma loja de moda, inspirado na identidade da ZARA. O fluxo completo de compra foi implementado, incluindo navegação, busca, carrinho, checkout e área do usuário.
 
 ## Funcionalidades
 Página inicial com vitrine, destaques e promoções.
