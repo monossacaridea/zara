@@ -25,5 +25,5 @@ CSS3
 JavaScript
 
 
-Como executar
+## Como executar
 Clone o repositório e abra o arquivo index.html no navegador ou apenas acessar o link do projeto no GitHub Pages.
