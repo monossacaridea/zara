@@ -3,37 +3,33 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Categorias - Zara</title>
-  <link rel="stylesheet" href="pag-categorias.css">
+  <title>Menu - Zara</title>
+  <link rel="stylesheet" href="pag-menu.css">
 </head>
 <body>
   <div class="container">
 
-    <!-- HEADER -->
+    <!-- HEADER COM BOTÃO VOLTAR (←) -->
     <header class="header">
-      <button class="btn-menu">
-        <img src="assets/icon-menu.png" alt="menu">
-      </button>
+      <button class="btn-back" onclick="window.history.back()">←</button>
       <h1 class="logo">ZARA</h1>
-      <!-- Ícone da lupa → redireciona para pag-busca.html -->
-      <button class="btn-search" onclick="window.location.href='pag-busca.html'">
+      <a href="pag-busca.html" class="btn-search">
         <img src="assets/icon-search.png" alt="search">
-      </button>
+      </a>
     </header>
 
     <!-- CONTEÚDO PRINCIPAL -->
     <main class="main-content">
 
-      <!-- Navegação de abas (categorias) -->
+      <!-- ABAS: MULHER, HOMEM, CRIANÇAS -->
       <nav class="tab-nav">
         <button class="tab-btn active">MULHER</button>
         <button class="tab-btn">HOMEM</button>
         <button class="tab-btn">CRIANÇAS</button>
-        <button class="tab-btn">HOME</button>
       </nav>
 
-      <!-- Seção: NOVIDADES (destaque) -->
-      <section class="hero-category">
+      <!-- HERO: NOVIDADES (agora redireciona para pag-busca) -->
+      <section class="hero-category" onclick="window.location.href='pag-busca.html'">
         <div class="hero-image">
           <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8zLwLcwGK8stAfSBjXz0taRa9wCSrz2JqEb6syy2C-x3IZCrbeDHQtvHgWvHdoZSIKqQl_YHrQ3vI7Ze4NpHYmHmC-CAYBHGQ2Ym33CfVKQXiy9k_M9RI6kBvVqsqlVcSckkTp4Ea4nggDcu4thmIkxtGpOCK8z0hF-D-QVimPcWNnzSinkqFo7Uj-c7tychQEIhqIQd9LUKHzPaSFK2_jrTjwrs_AsJ0APq6NpvX-a50iELBcNDIlG_oJ9CaYSG4_eHjnu_IEQ" alt="Novidades">
         </div>
@@ -42,55 +38,50 @@
         </div>
       </section>
 
-      <!-- Grid de categorias (bento) -->
-      <section class="category-grid">
+      <!-- LISTA VERTICAL DE CATEGORIAS COM IMAGENS GRANDES -->
+      <section class="category-vertical">
 
-        <!-- Roupas -->
-        <div class="cat-card cat-card-large" onclick="window.location.href='pag-busca.html'">
+        <!-- ROUPAS (agora redireciona para pag-busca) -->
+        <div class="cat-item" onclick="window.location.href='pag-busca.html'">
           <div class="cat-image">
             <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuC47wvn8KDjBX39i2gBgFW6sB_yF3Xa8HAoFkgihEePNNIsVY-XnQU5nzfF-fNK6KuZWFMDndRvKwuWHjYxB-hn0IFA6CzkMuLxZ8tFivb8HerewMifbJalfspdPLnq0BSraWnVUMhu_UGxWbEwMACafZqJk0UZQhi5o7-8lbFWHh5HRAJeUPdYByX6Rfb5FXmSqpVxnaI3JMpYxGYma7dGI3Iw3mkgdRToOlX7Zt_w_dJjeFEU8qHH6FcLD4cNAowvt4BY6n3zFA" alt="Roupas">
           </div>
-          <div class="cat-label">
+          <div class="cat-label-overlay">
             <span>Roupas</span>
-            <span class="arrow">→</span>
           </div>
         </div>
 
-        <!-- Sapatos -->
-        <div class="cat-card cat-card-small" onclick="window.location.href='pag-busca.html'">
+        <!-- SAPATOS (agora redireciona para pag-busca) -->
+        <div class="cat-item" onclick="window.location.href='pag-busca.html'">
           <div class="cat-image">
             <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRwCZD5sRDNftgUsPIifJ88gRF0xOBAAF7e2jd_a6N4NQDfrQNPM7dlwKtxNy7MdMjkeehui5tvqnuf1g9haVZTLX1kKnvsLTcQN2XwSm2nxmjqTR8cWLgZ3TC2FSsDpZcl47Ox-QnCbSGheCQoKfm-9RQfZW2LtRABIlB5ZnG6IWACjB_A4DmMyRIq0DeNcUCQJjz3H2Ri31DZNWGDhZqOdW94PSv3zlLy-Pyrqpqs-W6J3qbmsvgYwZMmvXzkF_6F4FXE2PWqg" alt="Sapatos">
           </div>
-          <div class="cat-label">
+          <div class="cat-label-overlay">
             <span>Sapatos</span>
-            <span class="arrow">→</span>
           </div>
         </div>
 
-        <!-- Acessórios -->
-        <div class="cat-card cat-card-medium" onclick="window.location.href='pag-busca.html'">
+        <!-- ACESSÓRIOS (agora redireciona para pag-busca) -->
+        <div class="cat-item" onclick="window.location.href='pag-busca.html'">
           <div class="cat-image">
             <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTAlatDJ4SLtCron3UPqV675sxPC8mDvqRO5U2j-Uud-uMjBasHim80X_9UyB1zdHo8np-c3d4Ne67bc3EYP3mKEnyQTAoq7qwuAQz3ByO1uokTFInnsef-gJ-2p42SDdKqKE6g4AK7cQXbOXxDXjnrxtQ11iVPYiP3vK02NOox1N2AhX1SE0mvi9uX9XIjc2n4a0QE5g_95fghMfsrZGQZ-mVlFcCqfybluMmcC6DGk-fhjyYeeYZ_Dg9NYLAsT9_D1brvpumhQ" alt="Acessórios">
           </div>
-          <div class="cat-label">
+          <div class="cat-label-overlay">
             <span>Acessórios</span>
-            <span class="arrow">→</span>
-          </div>
-        </div>
-
-        <!-- JOIN LIFE (destaque especial) -->
-        <div class="cat-card cat-card-join" onclick="window.location.href='pag-busca.html'">
-          <div class="join-content">
-            <span class="join-tag">Sustainable Fashion</span>
-            <h3 class="join-title">JOIN LIFE</h3>
-            <p class="join-desc">Nossa seleção de peças produzidas com tecnologias e matérias-primas que nos ajudam a reduzir o impacto ambiental dos nossos produtos.</p>
-            <span class="join-link">VER COLEÇÃO ↗</span>
           </div>
         </div>
 
       </section>
 
-      <!-- Lista completa de categorias -->
+      <!-- JOIN LIFE (agora redireciona para pag-busca) -->
+      <div class="join-life" onclick="window.location.href='pag-busca.html'">
+        <span class="join-tag">Sustainable Fashion</span>
+        <h3 class="join-title">JOIN LIFE</h3>
+        <p class="join-desc">Nossa seleção de peças produzidas com tecnologias e matérias-primas que nos ajudam a reduzir o impacto ambiental dos nossos produtos.</p>
+        <span class="join-link">VER COLEÇÃO ↗</span>
+      </div>
+
+      <!-- LISTA SIMPLES: BOLSAS, PERFUMES, SALE (agora redireciona para pag-busca) -->
       <section class="category-list">
         <div class="list-item" onclick="window.location.href='pag-busca.html'">
           <span>Bolsas</span>
@@ -108,23 +99,21 @@
 
     </main>
 
-    <!-- NAVBAR -->
+    <!-- NAVBAR PADRÃO -->
     <nav class="navbar">
-      <!-- Ícone INÍCIO → redireciona para index.html -->
       <a href="index.html" class="nav-item">
         <img src="assets/icon-inicio.png" alt="Início" class="nav-icon">
         <span>INÍCIO</span>
       </a>
-      <!-- Ícone BUSCAR → redireciona para pag-busca.html -->
       <a href="pag-busca.html" class="nav-item">
         <img src="assets/icon-buscar.png" alt="Buscar" class="nav-icon">
         <span>BUSCAR</span>
       </a>
-      <a href="#" class="nav-item">
+      <a href="pag-carrinho.html" class="nav-item">
         <img src="assets/icon-carrinho.png" alt="Carrinho" class="nav-icon">
         <span>CARRINHO</span>
       </a>
-      <a href="pag-conta.html" class="nav-item">
+      <a href="pag-conta.html" class="nav-item active">
         <img src="assets/icon-conta.png" alt="Conta" class="nav-icon">
         <span>CONTA</span>
       </a>
@@ -133,7 +122,6 @@
   </div>
 
   <script>
-    // Interação das abas
     document.querySelectorAll('.tab-btn').forEach(btn => {
       btn.addEventListener('click', function() {
         document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
